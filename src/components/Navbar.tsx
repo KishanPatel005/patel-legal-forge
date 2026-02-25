@@ -31,7 +31,7 @@ const Navbar = () => {
     >
       <div className="container mx-auto flex items-center justify-between py-4">
         <a href="#home" className="flex items-center gap-2">
-          <img src={logo} alt="Bhavin Patel Law Co." className="h-10 w-auto brightness-0 invert" />
+          <img src={logo} alt="Bhavin Patel Law Co." className="h-[60px] w-auto brightness-0 invert" />
         </a>
 
         {/* Desktop */}
