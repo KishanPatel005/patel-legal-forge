@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import logo from "@/assets/advocatelogo.png";
 
 const navLinks = [
   { label: "Home", href: "#home" },
@@ -29,8 +30,8 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto flex items-center justify-between py-4">
-        <a href="#home" className="font-heading text-xl font-bold text-gold">
-          Adv. Bhavin Patel
+        <a href="#home" className="flex items-center gap-2">
+          <img src={logo} alt="Bhavin Patel Law Co." className="h-10 w-auto brightness-0 invert" />
         </a>
 
         {/* Desktop */}

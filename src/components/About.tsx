@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Scale, ShieldCheck, Eye, IndianRupee } from "lucide-react";
+import advocatePhoto from "@/assets/advocate-photo.jpg";
 
 const values = [
   { icon: ShieldCheck, title: "Confidentiality", desc: "Your matters remain strictly private and privileged." },
@@ -12,6 +13,18 @@ const About = () => {
   return (
     <section id="about" className="section-padding bg-muted/50">
       <div className="container mx-auto">
+        {/* Photo + Text */}
+        <div className="flex flex-col items-center mb-12">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            className="w-40 h-40 rounded-full overflow-hidden border-4 border-gold/30 shadow-xl mb-6"
+          >
+            <img src={advocatePhoto} alt="Advocate Bhavin Patel" className="w-full h-full object-cover" />
+          </motion.div>
+        </div>
+
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Text */}
           <motion.div
